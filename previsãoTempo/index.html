@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="clima.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Previsão do Tempo</title>
+</head>
+<body>
+    <div class="container">
+        <h1>previsão do tempo</h1>
+        <i class="cont">Busca por cidade:</i><br>
+        <input type="text" id="cidade" placeholder="Digite sua Cidade" >
+        <button class="button" onclick="buscarClima()">
+            <span class="button-content"><i class='bx bx-search-alt'></i> Buscar</span>
+        </button>
+        <div id="res"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lilita+One&family=Righteous&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url(https://portal.inmet.gov.br/uploads/noticias/WhatsApp-Image-2022-10-04-at-15.05.20.jpeg);
+    background-size: 1900px;
+    color: white;
+    
+}
+h1{
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+}
+.cont{
+  font-family: 'Lilita One', cursive;
+  font-weight: 500;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  align-items: baseline;
+}
+
+p{
+  font-family: 'Righteous', cursive;
+  color: black;
+  font-weight: 700;
+  border-bottom: solid;
+  
+}
+
+h2{
+  font-family: 'Bebas Neue', sans-serif;
+  color: black;
+}
+.container{
+    border: solid rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    height: 950px;
+    width: 600px;
+    text-align: center;
+    align-items: center;
+    border-radius: 82px;
+    box-shadow: 5px 0px 20px rgb(253, 8, 8);
+}
+input{
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    margin-top: 20px;
+    height: 40px;
+    margin-bottom: 20px;
+    border: solid rgba(0, 0, 0, 0.479) ;
+    border-radius: 40px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    border: none;
+    
+}
+.img-temp{
+  animation: voltar 4s infinite alternate;
+}
+@keyframes voltar{
+  from{
+    transform: translateX(100px);
+  } to{
+    transform: translateX(-100px);
+  }
+}
+
+
+#res{
+    color: rgb(255, 252, 252);
+    font-weight: 200;
+    font-size: 20px;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 03rem;
+    padding: 0 2rem;
+    font-size: 20px;
+    border-radius: 1.5rem;
+    background: #3d3a4e;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    font-family: 'Bebas Neue', sans-serif;
+
+    
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgba(150, 93, 233, 1) 10.8%,
+      rgba(99, 88, 238, 1) 94.3%
+    );
+    transition: all 0.475s;
+  }
